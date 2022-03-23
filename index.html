@@ -10,15 +10,51 @@
 </head>
 
 <body>
-  <h1>Formulario</h1>
-  <p>complete com suas informações</p>
+  <h1 class="titulo">Formulario</h1>
+  <p class="subtitulo">complete com suas informações</p>
   <hr>
-  <div>
-    <label for="">nome</label>
-    <input type="text">
-    <label for="">sobrenome</label>
-    <input type="text">
-  </div>
+  <form action="">
+    <fieldset class="grupo">
+
+      <div class="campo">
+        <label for="">nome</label>
+        <input type="text">
+      </div>
+
+      <div class="campo">
+        <label for="">sobrenome</label>
+        <input type="text">
+      </div>
+
+    </fieldset>
+    <br>
+    <div class="campo">
+      <label for="email">e-mail</label>
+      <input type="email">
+    </div>
+    <br>
+    <fieldset class="grupo">
+      <div id="opcoes">
+        <label><strong>Selecione as tecnologias que utiliza:</strong></label><br><br>
+        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+        <label for="tecnologia1"> HTML</label>
+        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+        <label for="tecnologia2"> CSS</label>
+        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+        <label for="tecnologia3"> JavaScript</label>
+        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+        <label for="tecnologia4"> PHP</label>
+        <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+        <label for="tecnologia5"> C#</label>
+        <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+        <label for="tecnologia6"> Python</label>
+        <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+        <label for="tecnologia7"> Java</label>
+      </div>
+    </fieldset>
+    <br>
+  </form>
+
   <button>enviar</button>
 </body>
 
